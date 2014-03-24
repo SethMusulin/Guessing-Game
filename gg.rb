@@ -10,16 +10,3 @@ get '/' do
 
 end
 
-def check_guess(guess)
-  if guess.to_i > SECRET_NUMBER + 5
-    "Way too high!"
-  elsif guess.to_i < SECRET_NUMBER - 5
-    "Way too low!"
-  elsif guess.to_i == SECRET_NUMBER
-    "Correct! You da bomb! The secret number is #{SECRET_NUMBER}"
-  elsif guess.to_i > SECRET_NUMBER
-    "Too high!"
-  elsif guess.to_i < SECRET_NUMBER
-    "Too low!"
-  end
-end
